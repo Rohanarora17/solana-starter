@@ -9,9 +9,9 @@ import {
 import { createSignerFromKeypair, signerIdentity, publicKey } from "@metaplex-foundation/umi";
 
 // Define our Mint address
-const mint = publicKey("<mint address>")
+const mint = publicKey("EUeaLb2Fy9YRMoN3TKmeoZeBf4nmRBjZ8rcWfYBXqjfW")
 
-// Create a UMI connection
+// Create a UMI  
 const umi = createUmi('https://api.devnet.solana.com');
 const keypair = umi.eddsa.createKeypairFromSecretKey(new Uint8Array(wallet));
 const signer = createSignerFromKeypair(umi, keypair);
